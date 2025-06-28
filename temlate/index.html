@@ -1,30 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Website</title>
-  <link rel="stylesheet" href="/static/style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.16/build/spline-viewer.js"></script>
+  </head>
+  <body>
 
-  <header class="navbar">
-    <div class="logo">MySite</div>
-    <nav class="nav-links" id="navLinks">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
-    <div class="hamburger" onclick="toggleMenu()">
-      ☰
-    </div>
+  <header>
+    <div class="header">
+    <div class="navbar">
+    <div class="logo"><a href="#">AlphaKore</a></div>
+    <ul class="nav-links" id="navLinks">
+     <li> <a href="#">Home</a></li>
+       <li><a href="#">Portfolio</a></li> 
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">About</a></li>
+        
+    </ul>
+    <a href="#" class="action_btn">Contact</a>
+  <div class="toggle_btn">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  </div>
+  <div class="dropdown open">
+     <li> <a href="#">Home</a></li>
+       <li><a href="#">About</a></li> 
+        <li><a href="#">OUR TEAM</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="action_btn">Contact</a></li>
+  </div>
+  </div>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Welcome to My Website</h1>
-      <p>This is a responsive starter template.</p>
+      <div class="hero-content">
+        <h1>Welcome to My Website</h1>
+        <p>This is a responsive starter template.</p>
+        <blockquote class="community-quote">"Our community is the heart of everything we do."</blockquote>
+      </div>
+      <div class="robot-3d">
+        <spline-viewer url="https://prod.spline.design/Gys5OUTieBbG1QEW/scene.splinecode"></spline-viewer>
+      </div>
+    </section>
+    <section class="content">
+      <h2>Portfolio</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+    <section class="content">
+      <h2>Our Team</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </section>
     <section class="content">
       <h2>About</h2>
@@ -36,6 +69,6 @@
     <p>© 2025 MySite. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="/static/app.js"></script>
 </body>
 </html>
