@@ -41,7 +41,7 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section id="home" class="hero">
       <div class="hero-content">
         <h1>Welcome to My Website</h1>
         <p>This is a responsive starter template.</p>
@@ -51,15 +51,44 @@
         <spline-viewer url="https://prod.spline.design/Gys5OUTieBbG1QEW/scene.splinecode"></spline-viewer>
       </div>
     </section>
-    <section class="content">
-      <h2>Portfolio</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </section>
-    <section class="content">
+    <section class="content" id="portfolio">
+  <h2>Portfolio</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="portfolio-list">
+    <div class="portfolio-row">
+      <div class="portfolio-photo">
+        <img src="https://via.placeholder.com/120x120.png?text=Work+1" alt="Work 1" />
+      </div>
+      <div class="portfolio-details">
+        <h3>Pet.ai</h3>
+        <p>Short description of Work 1 goes here.</p>
+      </div>
+    </div>
+    <div class="portfolio-row">
+      <div class="portfolio-photo">
+        <img src="https://via.placeholder.com/120x120.png?text=Work+2" alt="Work 2" />
+      </div>
+      <div class="portfolio-details">
+        <h3>Synth.ai</h3>
+        <p>Short description of Work 2 goes here.</p>
+      </div>
+    </div>
+    <!-- Add more portfolio-row blocks as needed -->
+  </div>
+</section>
+    <section id="our-team" class="content">
       <h2>Our Team</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="portfolio-grid">
+    <div class="portfolio-item">Member 1</div>
+    <div class="portfolio-item">Member 2</div>
+    <div class="portfolio-item">Member 3</div>
+    <div class="portfolio-item">Member 4</div>
+    <div class="portfolio-item">Member 5</div>
+    <div class="portfolio-item">Member 6</div>
+  </div>
     </section>
-    <section class="content">
+    <section id="about" class="about">
       <h2>About</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </section>

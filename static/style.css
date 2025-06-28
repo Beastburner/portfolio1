@@ -213,6 +213,29 @@ a:hover {
   color: #00ff00;
 }
 
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  max-width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio-item {
+  background: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  min-height: 100px;
+  text-align: center;
+}
+
 .content h2 {
   text-align: center;
 }
@@ -316,4 +339,93 @@ footer {
     padding: 0.7rem;
     text-align: center;
   }
+}
+  /* About Section
+   =========================== */
+#about {
+  padding: 4rem 2rem;
+  background: #0a0a0a;
+  color: #00ff00;
+  /* Add more styles as needed */
+}
+
+/* ===========================
+   Projects Section
+   =========================== */
+/* Portfolio Section - One item per row, photo left, details right */
+#portfolio .portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+#portfolio .portfolio-row {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1rem;
+  gap: 2rem;
+}
+
+#portfolio .portfolio-photo {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  min-height: 140px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+#portfolio .portfolio-photo img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+#portfolio .portfolio-details {
+  flex: 1;
+  color: #0033ff;
+}
+
+#portfolio .portfolio-details h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  color: #0033ff;
+}
+
+#portfolio .portfolio-details p {
+  margin: 0;
+  color: #d7d6d6;
+  font-size: 1rem;
+}
+
+/* Responsive: Stack photo above details on small screens */
+@media (max-width: 700px) {
+  #portfolio .portfolio-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  #portfolio .portfolio-photo {
+    min-width: 100px;
+    min-height: 100px;
+    padding: 0.5rem;
+  }
+}
+
+/* ===========================
+   Contact Section
+   =========================== */
+#contact {
+  padding: 4rem 2rem;
+  background: #111;
+  color: #fff;
+  /* Add more styles as needed */
 }
